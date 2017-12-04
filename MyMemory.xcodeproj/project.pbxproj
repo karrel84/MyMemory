@@ -12,6 +12,9 @@
 		6A8CE7D31FCCE60F00B5B658 /* MyMemory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A8CE7D11FCCE60F00B5B658 /* MyMemory.xcdatamodeld */; };
 		6A8CE7D51FCCE60F00B5B658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8CE7D41FCCE60F00B5B658 /* Assets.xcassets */; };
 		6A8CE7D81FCCE60F00B5B658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8CE7D61FCCE60F00B5B658 /* LaunchScreen.storyboard */; };
+		95A0E00D1FD5966200CC109C /* MemoListVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0E00C1FD5966200CC109C /* MemoListVCTableViewController.swift */; };
+		95A0E00F1FD5968E00CC109C /* MemoFormVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0E00E1FD5968E00CC109C /* MemoFormVCViewController.swift */; };
+		95A0E0111FD596A500CC109C /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0E0101FD596A500CC109C /* MemoReadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		6A8CE7D41FCCE60F00B5B658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A8CE7D71FCCE60F00B5B658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A8CE7D91FCCE60F00B5B658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95A0E00C1FD5966200CC109C /* MemoListVCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoListVCTableViewController.swift; sourceTree = "<group>"; };
+		95A0E00E1FD5968E00CC109C /* MemoFormVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoFormVCViewController.swift; sourceTree = "<group>"; };
+		95A0E0101FD596A500CC109C /* MemoReadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				6A8CE7D61FCCE60F00B5B658 /* LaunchScreen.storyboard */,
 				6A8CE7D91FCCE60F00B5B658 /* Info.plist */,
 				6A8CE7D11FCCE60F00B5B658 /* MyMemory.xcdatamodeld */,
+				95A0E00C1FD5966200CC109C /* MemoListVCTableViewController.swift */,
+				95A0E00E1FD5968E00CC109C /* MemoFormVCViewController.swift */,
+				95A0E0101FD596A500CC109C /* MemoReadVC.swift */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A0E00D1FD5966200CC109C /* MemoListVCTableViewController.swift in Sources */,
+				95A0E0111FD596A500CC109C /* MemoReadVC.swift in Sources */,
 				6A8CE7D31FCCE60F00B5B658 /* MyMemory.xcdatamodeld in Sources */,
 				6A8CE7CB1FCCE60F00B5B658 /* AppDelegate.swift in Sources */,
+				95A0E00F1FD5968E00CC109C /* MemoFormVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
