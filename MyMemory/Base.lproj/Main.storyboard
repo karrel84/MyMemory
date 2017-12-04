@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,27 +27,31 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCell" rowHeight="80" id="ryA-lC-BIq">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ryA-lC-BIq" id="lJT-Ma-afo">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ryA-lC-BIq" id="lJT-Ma-afo">
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="글의 제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WQ-5n-MJi">
-                                            <rect key="frame" x="16" y="11" width="229" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="글의 제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WQ-5n-MJi">
+                                            <rect key="frame" x="26" y="48" width="52" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="CAM-Ld-Nu4"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="글의 내용" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agd-Bc-EYZ">
-                                            <rect key="frame" x="16" y="31" width="229" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="글의 내용" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agd-Bc-EYZ">
+                                            <rect key="frame" x="26" y="11" width="52" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0TT-p7-zhN"/>
+                                                <constraint firstAttribute="height" constant="21" id="7N1-jR-3Pf"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nch-pl-RQK">
-                                            <rect key="frame" x="243" y="11" width="98" height="60"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nch-pl-RQK">
+                                            <rect key="frame" x="272" y="12" width="60.5" height="60"/>
                                             <string key="text">1970-01-01
 19:01:30</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -54,6 +59,20 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="agd-Bc-EYZ" firstAttribute="leading" secondItem="lJT-Ma-afo" secondAttribute="leadingMargin" constant="10" id="GaB-ax-HDO"/>
+                                        <constraint firstItem="agd-Bc-EYZ" firstAttribute="top" secondItem="lJT-Ma-afo" secondAttribute="topMargin" id="Pd5-0v-cpH"/>
+                                        <constraint firstItem="8WQ-5n-MJi" firstAttribute="top" secondItem="agd-Bc-EYZ" secondAttribute="bottom" constant="5" id="ZlO-y4-YIY"/>
+                                        <constraint firstItem="agd-Bc-EYZ" firstAttribute="top" secondItem="lJT-Ma-afo" secondAttribute="topMargin" id="bPS-3M-ljy"/>
+                                        <constraint firstItem="8WQ-5n-MJi" firstAttribute="top" secondItem="agd-Bc-EYZ" secondAttribute="bottom" constant="5" id="bcR-0z-z8O"/>
+                                        <constraint firstItem="Nch-pl-RQK" firstAttribute="leading" secondItem="8WQ-5n-MJi" secondAttribute="trailing" constant="10" id="cnb-Ga-r1m"/>
+                                        <constraint firstItem="8WQ-5n-MJi" firstAttribute="bottom" secondItem="lJT-Ma-afo" secondAttribute="bottomMargin" constant="5" id="d5C-OZ-OYn"/>
+                                        <constraint firstItem="Nch-pl-RQK" firstAttribute="leading" secondItem="agd-Bc-EYZ" secondAttribute="trailing" constant="10" id="hAf-cN-Q1v"/>
+                                        <constraint firstItem="8WQ-5n-MJi" firstAttribute="leading" secondItem="lJT-Ma-afo" secondAttribute="leadingMargin" constant="10" id="hS8-h5-qLB"/>
+                                        <constraint firstItem="agd-Bc-EYZ" firstAttribute="leading" secondItem="lJT-Ma-afo" secondAttribute="leadingMargin" constant="10" id="k0Z-yv-5gI"/>
+                                        <constraint firstItem="8WQ-5n-MJi" firstAttribute="top" secondItem="agd-Bc-EYZ" secondAttribute="bottom" id="l4j-ac-XLe"/>
+                                        <constraint firstItem="Nch-pl-RQK" firstAttribute="leading" secondItem="agd-Bc-EYZ" secondAttribute="trailing" constant="10" id="pCL-KN-8UE"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="PAD-Li-PAa">
