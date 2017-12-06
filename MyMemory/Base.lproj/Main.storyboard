@@ -87,6 +87,11 @@
                                         <constraint firstItem="8WQ-5n-MJi" firstAttribute="top" secondItem="agd-Bc-EYZ" secondAttribute="bottom" constant="8" symbolic="YES" id="y9A-MB-53q"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="8WQ-5n-MJi" id="bXI-5N-qGe"/>
+                                    <outlet property="regdate" destination="Nch-pl-RQK" id="asE-Qj-p4j"/>
+                                    <outlet property="subject" destination="agd-Bc-EYZ" id="Nau-hd-LLs"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="PAD-Li-PAa" customClass="MemoCell" customModule="MyMemory" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
@@ -145,6 +150,12 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="uNd-mO-si2" secondAttribute="trailing" constant="10" id="wQX-tI-Szv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="5FS-L3-BzA" id="9KZ-zO-Dub"/>
+                                    <outlet property="img" destination="7lH-3n-dDC" id="dY7-5q-sTq"/>
+                                    <outlet property="regdate" destination="uNd-mO-si2" id="dvB-yZ-KHG"/>
+                                    <outlet property="subject" destination="Esz-wT-dwv" id="TbT-Ra-N9U"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -170,7 +181,7 @@
         <!--상세 화면-->
         <scene sceneID="39S-FB-Obu">
             <objects>
-                <viewController title="상세 화면" id="CTZ-Mc-68U" customClass="MemoReadVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" title="상세 화면" id="CTZ-Mc-68U" customClass="MemoReadVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OFh-qB-nz8"/>
                         <viewControllerLayoutGuide type="bottom" id="nxs-uI-TXH"/>
@@ -195,7 +206,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FgP-2y-tRw">
-                                <rect key="frame" x="16" y="189" width="250" height="250"/>
+                                <rect key="frame" x="16" y="188" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Btt-K8-l4O"/>
                                     <constraint firstAttribute="height" constant="250" id="e9Y-Cd-2Ic"/>
@@ -215,6 +226,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="JDb-5Y-Ulu"/>
+                    <connections>
+                        <outlet property="contents" destination="BdY-8U-goa" id="B5G-S8-qgb"/>
+                        <outlet property="img" destination="FgP-2y-tRw" id="P6V-Ff-e3r"/>
+                        <outlet property="subject" destination="ASa-pC-fVT" id="sAJ-2y-gf8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="StV-Yo-6ED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
